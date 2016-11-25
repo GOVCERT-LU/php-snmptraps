@@ -18,7 +18,7 @@ $all_error_traps    = $Trap->fetch_traps (array("emergency", "alert", "critical"
 
 $Trap->reset_print_limit (13);
 $all_warning_traps  = $Trap->fetch_traps (array("error", "warning"));
-$all_info_traps     = $Trap->fetch_traps (array("notice", "informational", "debug"));
+$all_info_traps     = $Trap->fetch_traps (array("notice", "informational", "debug", "audit"));
 $all_unknown_traps  = $Trap->fetch_traps (array("unknown"));
 
 # set fields

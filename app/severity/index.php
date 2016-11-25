@@ -20,7 +20,7 @@ $_GET = $User->strip_input_tags ($_GET);
 if($_GET['page']=="all")                { $traps = $Trap->fetch_traps ("all"); }
 elseif($_GET['page']=="major")          { $traps = $Trap->fetch_traps (array("emergency", "alert", "critical")); }
 elseif($_GET['page']=="minor")          { $traps = $Trap->fetch_traps (array("error", "warning")); }
-elseif($_GET['page']=="informational")  { $traps = $Trap->fetch_traps (array("notice", "informational", "debug")); }
+elseif($_GET['page']=="informational")  { $traps = $Trap->fetch_traps (array("notice", "informational", "debug", "audit")); }
 elseif($_GET['page']=="unknown")        { $traps = $Trap->fetch_traps (array("unknown")); }
 
 

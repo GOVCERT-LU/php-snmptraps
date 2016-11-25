@@ -74,7 +74,7 @@ if ($item!==false) {
         $html[] = "<tr>";
         $html[] = " <td>Content</td>";
         $html[] = " <td>";
-        $html[] = " <input type='text' class='form-control input-sm' name='content' value='".$item->content."'>";
+        $html[] = " <input type='text' class='form-control input-sm' name='content' value=''>";
         $html[] = " <span class='text-muted'>* Leave blank to match full OID</span>";
         $html[] = " </td>";
         $html[] = "</tr>";
@@ -162,7 +162,7 @@ if ($item!==false) {
         $html[] = "<tr>";
         $html[] = " <td>Content</td>";
         $html[] = " <td>";
-        $html[] = " <input type='text' class='form-control input-sm' name='content' value='".$item->content."'>";
+        $html[] = " <input type='text' class='form-control input-sm' name='content' value=''>";
         $html[] = " <input type='hidden' name='oid' value='".$item->oid."'>";
         $html[] = " <input type='hidden' name='action' value='".$_GET['action']."'>";
         $html[] = " </td>";

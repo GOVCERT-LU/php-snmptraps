@@ -785,6 +785,7 @@ class pushover {
         elseif ($severity=="critical")       { $this->p_priority =  1; }
         elseif ($severity=="error")          { $this->p_priority =  0; }
         elseif ($severity=="warning")        { $this->p_priority =  0; }
+        elseif ($severity=="audit")          { $this->p_priority = -1; }
         elseif ($severity=="notice")         { $this->p_priority = -1; }
         elseif ($severity=="informational")  { $this->p_priority = -2; }
         elseif ($severity=="debug")          { $this->p_priority = -2; }
