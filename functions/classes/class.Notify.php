@@ -528,7 +528,7 @@ class mail {
         # save details
         $this->message_details = (object) $message_details;
         # set subject
-        $subject = "[".$message_details->hostname."] - ".$message_details->msg;
+        $subject = "[".$message_details->hostname."] - ".$message_details->severity;
 
         # set mail body content
         $body = array();
